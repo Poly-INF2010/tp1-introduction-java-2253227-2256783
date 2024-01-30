@@ -36,8 +36,7 @@ public class Point2d extends AbstractPoint {
      */
     @Override
     public Point2d translate(Double[] translateVector) {
-        vector[X] += translateVector[X];
-        vector[Y] += translateVector[Y];
+        PointOperator.translate(vector, translateVector);
         return this;
     }
 
@@ -47,8 +46,8 @@ public class Point2d extends AbstractPoint {
      * @return Translated point
      */
     public Point2d translate(Point2d translateVector) {
-        vector[X] += translateVector.X();
-        vector[Y] += translateVector.Y();
+        Double[] translateVec = {translateVector.X(), translateVector.Y()};
+        translate(translateVec);
         return this;
     }
 
@@ -59,9 +58,7 @@ public class Point2d extends AbstractPoint {
      */
     @Override
     public Point2d rotate(Double[][] rotationMatrix) {
-        Double tampon = vector[X];
-        vector[X] = (rotationMatrix[1][1] * vector[X]) + (rotationMatrix[0][1] * vector[Y]);
-        vector[Y] = (rotationMatrix[1][0] * tampon) + (rotationMatrix[0][0] * vector[Y]);
+        PointOperator.rotate(vector, rotationMatrix);
         return this;
     }
 
