@@ -17,7 +17,8 @@ public final class LetterFactory {
      * @return BaseShape containing the letter A
      */
     public static BaseShape create_A()  {
-        return null;
+        BaseShape a = new BaseShape();
+        return a;
     }
 
     /** TODO
@@ -25,7 +26,8 @@ public final class LetterFactory {
      * @return BaseShape containing the letter B
      */
     public static BaseShape create_B() {
-        return null;
+        BaseShape b = new BaseShape();
+        return b;
     }
 
     /** TODO
@@ -33,39 +35,39 @@ public final class LetterFactory {
      * @return BaseShape containing the letter C
      */
     public static BaseShape create_C() {
-        return null;
-    }
+        BaseShape c = new BaseShape();
+        return c;    }
 
     /** TODO
      * Create the letter E graphically
      * @return BaseShape containing the letter E
      */
     public static BaseShape create_E() {
-        return null;
-    }
+        BaseShape e = new BaseShape();
+        return e;    }
 
     /** TODO
      * Create the letter H graphically
      * @return BaseShape containing the letter H
      */
     public static BaseShape create_H() {
-        return null;
-    }
+        BaseShape h = new BaseShape();
+        return h;    }
 
     /** TODO
      * Create the letter N graphically
      * @return BaseShape containing the letter N
      */
     public static BaseShape create_N() {
-        return null;
-    }
+        BaseShape n = new BaseShape();
+        return n;    }
 
     /** TODO
      * Create the letter O graphically
      * @return BaseShape containing the letter O
      */
     public static BaseShape create_O() {
-        return null;
-    }
+        BaseShape o = new BaseShape();
+        return o;    }
 
 }

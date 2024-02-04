@@ -13,7 +13,12 @@ public class Rectangle extends BaseShape {
      * @param height Height of the rectangle
      */
     public Rectangle(Double width, Double height) {
-
+        double halfWidth = width / 2.0;
+        double halfHeight = height / 2.0;
+        this.add(new Point2d(-halfWidth, -halfHeight));
+        this.add(new Point2d(halfWidth, -halfHeight));
+        this.add(new Point2d(halfWidth, halfHeight));
+        this.add(new Point2d(-halfWidth, halfHeight));
     }
 
     /** TODO

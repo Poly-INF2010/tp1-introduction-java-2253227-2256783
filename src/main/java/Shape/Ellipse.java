@@ -11,7 +11,13 @@ public class Ellipse extends BaseShape {
      * @param heightDiameter Height of the Ellipse
      */
     public Ellipse(Double widthDiameter, Double heightDiameter) {
-        
+        double radiusX = widthDiameter / 2.0;
+        double radiusY = heightDiameter / 2.0;
+
+        add(new Point2d(radiusX,0.0));
+        add(new Point2d(0.0, radiusY));
+        add(new Point2d(-radiusX, 0.0));
+        add(new Point2d(0.0, -radiusY));
     }
 
     /** TODO
@@ -35,6 +41,6 @@ public class Ellipse extends BaseShape {
      */
     @Override
     public Ellipse clone() {
-        return new Ellipse((cloneCoords()));
+        return new Ellipse(cloneCoords());
     }
 }
