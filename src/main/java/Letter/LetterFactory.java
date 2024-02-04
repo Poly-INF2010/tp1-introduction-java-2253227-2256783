@@ -17,7 +17,7 @@ public final class LetterFactory {
      * @return BaseShape containing the letter A
      */
     public static BaseShape create_A()  {
-        BaseShape a = new BaseShape();
+        Rectangle a = new Rectangle(20.0, 100.0);
         return a;
     }
 
@@ -26,8 +26,8 @@ public final class LetterFactory {
      * @return BaseShape containing the letter B
      */
     public static BaseShape create_B() {
-        BaseShape b = new BaseShape();
-        return b;
+        Rectangle a = new Rectangle(20.0, 100.0);
+        return a;
     }
 
     /** TODO
@@ -35,39 +35,44 @@ public final class LetterFactory {
      * @return BaseShape containing the letter C
      */
     public static BaseShape create_C() {
-        BaseShape c = new BaseShape();
-        return c;    }
+        Rectangle a = new Rectangle(20.0, 100.0);
+
+        return a;    }
 
     /** TODO
      * Create the letter E graphically
      * @return BaseShape containing the letter E
      */
     public static BaseShape create_E() {
-        BaseShape e = new BaseShape();
-        return e;    }
+        Rectangle a = new Rectangle(20.0, 100.0);
+
+        return a;    }
 
     /** TODO
      * Create the letter H graphically
      * @return BaseShape containing the letter H
      */
     public static BaseShape create_H() {
-        BaseShape h = new BaseShape();
-        return h;    }
+        Rectangle a = new Rectangle(20.0, 100.0);
+
+        return a;    }
 
     /** TODO
      * Create the letter N graphically
      * @return BaseShape containing the letter N
      */
     public static BaseShape create_N() {
-        BaseShape n = new BaseShape();
-        return n;    }
+        Rectangle a = new Rectangle(20.0, 100.0);
+
+        return a;    }
 
     /** TODO
      * Create the letter O graphically
      * @return BaseShape containing the letter O
      */
     public static BaseShape create_O() {
-        BaseShape o = new BaseShape();
-        return o;    }
+        Rectangle a = new Rectangle(20.0, 100.0);
+
+        return a;    }
 
 }

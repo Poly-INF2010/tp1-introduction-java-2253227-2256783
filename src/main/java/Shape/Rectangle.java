@@ -15,10 +15,12 @@ public class Rectangle extends BaseShape {
     public Rectangle(Double width, Double height) {
         double halfWidth = width / 2.0;
         double halfHeight = height / 2.0;
-        this.add(new Point2d(-halfWidth, -halfHeight));
-        this.add(new Point2d(halfWidth, -halfHeight));
-        this.add(new Point2d(halfWidth, halfHeight));
-        this.add(new Point2d(-halfWidth, halfHeight));
+        for(double y = -halfHeight; y <= halfHeight; y += 1.0){
+            for(double x = -halfWidth ; x <= halfWidth; x += 1.0 ) {
+                Point2d newPoint = new Point2d(x, y);
+                this.add(newPoint);
+            }
+        }
     }
 
     /** TODO
